@@ -22,21 +22,14 @@ namespace Moravia.Homework.Services
 
         public void ConvertAndStore(string inputPath, string outputPath)
         {
-            try
-            {
-                var content = inputStorage.Read(inputPath);
-                var document = inputFormat.Parse(content);
-                
-                var outputContent = outputFormat.Serialize(document);
-                
-                outputStorage.Write(outputPath, outputContent);
+            var content = inputStorage.Read(inputPath);
+            var document = inputFormat.Parse(content);
 
-                Console.WriteLine("Conversion completed successfully.");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"An error occured: {ex.Message}");
-            }
+            var outputContent = outputFormat.Serialize(document);
+
+            outputStorage.Write(outputPath, outputContent);
+
+            Console.WriteLine("Conversion completed successfully.");
         }
 
     }

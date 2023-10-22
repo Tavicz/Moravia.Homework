@@ -13,7 +13,14 @@ namespace Moravia.Homework
             var sourceFileName = Path.Combine(Environment.CurrentDirectory, "..\\..\\..\\Source Files\\Document1.xml");
             var targetFileName = Path.Combine(Environment.CurrentDirectory, "..\\..\\..\\Target Files\\Document1.json");
 
-            service.ConvertAndStore(sourceFileName, targetFileName);
+            try
+            {
+                service.ConvertAndStore(sourceFileName, targetFileName);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An error occured: {ex.Message}");
+            }
         }
     }
 }

@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moravia.Homework", "Moravia.Homework\Moravia.Homework.csproj", "{69F89040-C1BA-405C-A368-E9647891D409}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moravia.Homework.Tests", "Moravia.Homework.Tests\Moravia.Homework.Tests.csproj", "{55D1F7C6-BA15-4170-ABF7-64D9A2F3C02E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{69F89040-C1BA-405C-A368-E9647891D409}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69F89040-C1BA-405C-A368-E9647891D409}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69F89040-C1BA-405C-A368-E9647891D409}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55D1F7C6-BA15-4170-ABF7-64D9A2F3C02E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55D1F7C6-BA15-4170-ABF7-64D9A2F3C02E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55D1F7C6-BA15-4170-ABF7-64D9A2F3C02E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55D1F7C6-BA15-4170-ABF7-64D9A2F3C02E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
